@@ -6,7 +6,6 @@ class Clipboard {
       fakeId,
     } = options;
 
-    this.selectedText = null;
     this.fakeId = fakeId;
   }
 
