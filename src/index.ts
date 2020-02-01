@@ -1,15 +1,28 @@
 import select from 'select';
 
+interface options {
+  fakeId: string
+}
+
+declare const Window: any
+
 class Clipboard {
-  constructor(options = {}) {
+  fakeId: string
+  version: string
+  fakeElem: any
+  target: any
+  selectedText: string
+
+  constructor(options: options) {
     const {
       fakeId,
     } = options;
 
     this.fakeId = fakeId;
+    this.version = '__VERSION__';
   }
 
-  createFake(text) {
+  createFake(text: string) {
     if (!this.fakeElem) {
       const fakeElem = document.createElement('textarea');
       fakeElem.style.fontSize = '12pt';
@@ -24,7 +37,7 @@ class Clipboard {
     }
 
     if (this.fakeId) {
-      fakeElem.id = this.fakeId;
+      this.fakeElem.id = this.fakeId;
     }
 
     this.fakeElem.value = text;
@@ -38,12 +51,12 @@ class Clipboard {
     }
   }
 
-  selectTarget(arg) {
+  selectTarget(arg: any) {
     const tempArg = typeof arg === 'function' ? arg() : arg;
 
     if (typeof tempArg === 'string') {
       this.target = this.createFake(tempArg);
-    } else if (tempArg instanceof window.node) {
+    } else if (tempArg instanceof Window.node) {
       this.target = tempArg;
     } else {
       throw new Error('Unsupported parameter type!');
@@ -52,7 +65,7 @@ class Clipboard {
     this.selectedText = select(this.target);
   }
 
-  copyText(action) {
+  copyText(action: string) {
     return new Promise((resolve, reject) => {
       const { selectedText } = this;
       try {
@@ -71,17 +84,17 @@ class Clipboard {
   }
 
   clearSelection() {
-    window.getSelection().removeAllRanges();
+    Window.getSelection().removeAllRanges();
   }
 
   // 对外暴露的方法
-  cut(arg) {
+  cut(arg: any) {
     this.selectTarget(arg);
     this.copyText('cut');
     this.clearSelection();
   }
 
-  copy(arg) {
+  copy(arg: any) {
     this.selectTarget(arg);
     this.copyText('copy');
     this.clearSelection();

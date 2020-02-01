@@ -2,8 +2,10 @@
   "name": "easy-clipboard",
   "version": "1.0.0",
   "description": "[clipboard.js](https://github.com/zenorocha/clipboard.js) 是一个非常好用的剪切板插件，但是随着前端框架的演变，用户与网页交互的方式越来越多，不仅限于点击事件了，并且在很多情况下，我们可能不需要它强制性自带的点击事件，所以我打算把 [clipboard.js](https://github.com/zenorocha/clipboard.js) 精简一下，把点击事件删掉，这就是本插件的初衷。",
-  "main": "index.js",
+  "main": "dist/easy-clipboard.cjs.js",
+  "module": "dist/easy-clipboard.esm.js",
   "scripts": {
+    "build": "rollup -w -c ./rollup.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -11,12 +13,23 @@
     "url": "git+https://github.com/sishenhei7/easy-clipboard.git"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/sishenhei7/easy-clipboard/issues"
   },
   "homepage": "https://github.com/sishenhei7/easy-clipboard#readme",
   "dependencies": {
     "select": "^1.1.2"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^11.0.1",
+    "@rollup/plugin-json": "^4.0.1",
+    "@rollup/plugin-replace": "^2.3.0",
+    "@types/jest": "^25.1.1",
+    "@types/node": "^13.1.8",
+    "@types/puppeteer": "^2.0.0",
+    "rollup": "^1.29.0",
+    "rollup-plugin-typescript2": "^0.25.3",
+    "typescript": "^3.7.5"
   }
 }
