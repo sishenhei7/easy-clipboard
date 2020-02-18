@@ -20,6 +20,9 @@ class Clipboard {
 
     this.fakeId = fakeId;
     this.version = '__VERSION__';
+    this.fakeElem = null;
+    this.target = null;
+    this.selectedText = '';
   }
 
   createFake(text: string) {

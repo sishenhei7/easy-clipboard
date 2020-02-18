@@ -55,6 +55,9 @@ class Clipboard {
         const { fakeId, } = options;
         this.fakeId = fakeId;
         this.version = '1.0.0';
+        this.fakeElem = null;
+        this.target = null;
+        this.selectedText = '';
     }
     createFake(text) {
         if (!this.fakeElem) {
