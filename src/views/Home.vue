@@ -1,18 +1,28 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    Home
+    <example-code :code="code" type="html" />
   </div>
 </template>
 
-<script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator'
+import ExampleCode from '@/components/ExampleCode.vue'
 
-export default {
-  name: "Home",
+/* eslint-disable @typescript-eslint/no-inferrable-types */
+@Component({
   components: {
-    HelloWorld
+    ExampleCode
   }
-};
+})
+export default class Home extends Vue {
+  private code: string = `
+    <!-- Target -->
+    <input id="foo" value="https://github.com/zenorocha/clipboard.js.git">
+
+    <!-- Trigger -->
+    <button class="btn" data-clipboard-target="#foo">
+        <img src="assets/clippy.svg" alt="Copy to clipboard">
+    </button>`
+}
 </script>
