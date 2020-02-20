@@ -1,5 +1,5 @@
 /*!
- * easy-clipboard.js v1.0.4
+ * easy-clipboard.js v1.0.5
  * (c) 2019-2020 Yangzhou
  * https: //github.com/sishenhei7/easy-clipboard
  * Released under the MIT License.
@@ -54,7 +54,7 @@
     class Clipboard {
         constructor(options) {
             this.fakeId = options && options.fakeId;
-            this.version = '1.0.4';
+            this.version = '1.0.5';
             this.fakeElem = null;
             this.target = null;
             this.selectedText = '';
