@@ -3712,6 +3712,20 @@ easy-clipboard@1.0.4:
     vue-property-decorator "^8.3.0"
     vue-router "^3.1.5"
 
+easy-clipboard@1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/easy-clipboard/-/easy-clipboard-1.0.5.tgz#9d1f29a01c5500dbb63558803f1fd3bc501460a8"
+  integrity sha512-f/ua48VfxHsfKMbdRMxcF5yEuAQOdla0tjM5Zmn/1hZYdHzc+cR9ZqTCKNxBvJ9ZaaDXAo4vtPfL3+nVyiNuvQ==
+  dependencies:
+    core-js "^3.6.4"
+    easy-clipboard "1.0.4"
+    highlight.js "^9.18.1"
+    select "^1.1.2"
+    vue "^2.6.11"
+    vue-class-component "^7.2.2"
+    vue-property-decorator "^8.3.0"
+    vue-router "^3.1.5"
+
 easy-stack@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npm.taobao.org/easy-stack/download/easy-stack-1.0.0.tgz#12c91b3085a37f0baa336e9486eac4bf94e3e788"

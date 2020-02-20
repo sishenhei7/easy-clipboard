@@ -58,6 +58,7 @@ export default class HelloWorld extends Vue {
   border-radius: 4px;
   clear: both;
   top: -25px;
+  padding: 25px 0 0;
 
   &:hover .btn {
     opacity: 1;
