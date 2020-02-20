@@ -14,11 +14,7 @@ class Clipboard {
   selectedText: string
 
   constructor(options: options) {
-    const {
-      fakeId,
-    } = options;
-
-    this.fakeId = fakeId;
+    this.fakeId = options.fakeId;
     this.version = '__VERSION__';
     this.fakeElem = null;
     this.target = null;

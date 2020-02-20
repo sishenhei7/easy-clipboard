@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import hljs from 'highlight.js'
+import ClipboardJS from 'easy-clipboard'
 import App from './App.vue'
 import router from './router'
 import '@/styles/highlight.scss'
@@ -11,6 +12,8 @@ Vue.directive('highlight', el => {
   const blocks = el.querySelectorAll('code')
   blocks.forEach(block => hljs.highlightBlock(block))
 })
+
+Vue.prototype.$clipboardJS = new ClipboardJS()
 
 new Vue({
   router,

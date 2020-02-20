@@ -3670,6 +3670,18 @@ duplexify@^3.4.2, duplexify@^3.6.0:
     readable-stream "^2.0.0"
     stream-shift "^1.0.0"
 
+easy-clipboard@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/easy-clipboard/-/easy-clipboard-1.0.1.tgz#ee892597abf6604589b827188be5bda73197a81f"
+  integrity sha512-tehW7ZWgggmXxQ/rB9I1YthOaDfqLLO2ClNR6EnqV/QU3lVZeUlF4RfSusoPKff1b1zklqUKKGa45fHiuveoww==
+  dependencies:
+    core-js "^3.6.4"
+    select "^1.1.2"
+    vue "^2.6.11"
+    vue-class-component "^7.2.2"
+    vue-property-decorator "^8.3.0"
+    vue-router "^3.1.5"
+
 easy-stack@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npm.taobao.org/easy-stack/download/easy-stack-1.0.0.tgz#12c91b3085a37f0baa336e9486eac4bf94e3e788"

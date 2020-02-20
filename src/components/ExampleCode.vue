@@ -14,6 +14,10 @@ import { Component, Prop, Vue } from 'vue-property-decorator'
 export default class HelloWorld extends Vue {
   @Prop({ required: true, default: 'javascript' }) readonly type: string
   @Prop() readonly code: string
+
+  public handleClippy(): void {
+    this.$clipboardJS.copy(this.code);
+  }
 }
 </script>
 
