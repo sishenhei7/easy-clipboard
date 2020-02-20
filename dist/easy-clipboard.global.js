@@ -89,7 +89,7 @@
             if (typeof tempArg === 'string') {
                 this.target = this.createFake(tempArg);
             }
-            else if (tempArg instanceof Window.node) {
+            else if (tempArg instanceof window.Node) {
                 this.target = tempArg;
             }
             else {
@@ -116,7 +116,7 @@
             });
         }
         clearSelection() {
-            Window.getSelection().removeAllRanges();
+            window.getSelection().removeAllRanges();
         }
         // 对外暴露的方法
         cut(arg) {

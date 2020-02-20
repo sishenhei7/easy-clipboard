@@ -4,7 +4,7 @@
       <slot />
     </div>
     <!-- prettier-ignore -->
-    <pre v-highlight class="snippet"><button class="btn"><img class="clippy" width="13" src="@/assets/clippy.svg" alt="Copy to clipboard"/></button><code class="code" :class="[type]">{{ code }}</code></pre>
+    <pre v-highlight class="snippet"><button class="btn" @click="handleClippy"><img class="clippy" width="13" src="@/assets/clippy.svg" alt="Copy to clipboard"/></button><code class="code" :class="[type]">{{ code }}</code></pre>
   </div>
 </template>
 <script lang="ts">

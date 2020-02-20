@@ -23,7 +23,7 @@
   "homepage": "https://github.com/sishenhei7/easy-clipboard#readme",
   "dependencies": {
     "core-js": "^3.6.4",
-    "easy-clipboard": "1.0.3",
+    "easy-clipboard": "1.0.4",
     "highlight.js": "^9.18.1",
     "select": "^1.1.2",
     "vue": "^2.6.11",
