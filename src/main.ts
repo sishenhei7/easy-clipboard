@@ -2,6 +2,7 @@ import Vue from 'vue'
 import hljs from 'highlight.js'
 import App from './App.vue'
 import router from './router'
+import '@/styles/highlight.scss'
 
 Vue.config.productionTip = false
 

@@ -3,22 +3,8 @@
     <div class="example">
       <slot />
     </div>
-    <pre v-highlight class="snippet">
-      <button class="btn">
-        <img
-          class="clippy"
-          width="13"
-          src="@/assets/clippy.svg"
-          alt="Copy to clipboard"
-        >
-      </button>
-      <code
-        class="code"
-        :class="[type]"
-      >
-        {{ code }}
-      </code>
-    </pre>
+    <!-- prettier-ignore -->
+    <pre v-highlight class="snippet"><button class="btn"><img class="clippy" width="13" src="@/assets/clippy.svg" alt="Copy to clipboard"/></button><code class="code" :class="[type]">{{ code }}</code></pre>
   </div>
 </template>
 <script lang="ts">
@@ -31,10 +17,30 @@ export default class HelloWorld extends Vue {
 }
 </script>
 
-<style lang="scss" scope>
-@import '@/styles/highlight.scss';
+<style lang="scss" scoped>
 .example {
+  position: relative;
+  margin: 15px 0 0;
+  padding: 39px 19px 14px;
+  background-color: #fff;
+  border-radius: 4px 4px 0 0;
+  border: 1px solid #ddd;
+  z-index: 2;
+
+  &::after {
+    content: 'Example';
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 2px 8px;
+    font-size: 12px;
+    font-weight: 700;
+    background-color: #f5f5f5;
+    color: #9da0a4;
+    border-radius: 4px 0 4px 0;
+  }
 }
+
 .snippet {
   display: block;
   position: relative;
@@ -45,15 +51,15 @@ export default class HelloWorld extends Vue {
   color: #333;
   background: #f8f8f8;
   border: 1px solid #ddd;
-  border-radius: 8px;
+  border-radius: 4px;
   clear: both;
-  top: -20px;
-  padding: 20px 0 0;
+  top: -25px;
 
   &:hover .btn {
     opacity: 1;
   }
 }
+
 .btn {
   position: absolute;
   display: inline-block;
@@ -77,12 +83,14 @@ export default class HelloWorld extends Vue {
   border-radius: 3px;
   user-select: none;
 }
+
 .clippy {
   margin-top: -3px;
   position: relative;
   top: 3px;
   border: 0;
 }
+
 .code {
   margin: 0;
   border-radius: 3px;

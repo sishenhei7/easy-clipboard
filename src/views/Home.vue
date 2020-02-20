@@ -3,7 +3,6 @@
     Home
     <example-code :code="code" type="html">
       <input type="text" />
-      <div>haha</div>
     </example-code>
   </div>
 </template>
