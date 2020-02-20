@@ -3670,12 +3670,14 @@ duplexify@^3.4.2, duplexify@^3.6.0:
     readable-stream "^2.0.0"
     stream-shift "^1.0.0"
 
-easy-clipboard@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/easy-clipboard/-/easy-clipboard-1.0.1.tgz#ee892597abf6604589b827188be5bda73197a81f"
-  integrity sha512-tehW7ZWgggmXxQ/rB9I1YthOaDfqLLO2ClNR6EnqV/QU3lVZeUlF4RfSusoPKff1b1zklqUKKGa45fHiuveoww==
+easy-clipboard@1.0.2, easy-clipboard@^1.0.1:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/easy-clipboard/-/easy-clipboard-1.0.2.tgz#099605ecb8dfad9eb9421bc830b25d357caab237"
+  integrity sha512-rao1gZrF7vKdgs7EH7dOaDXzJ/0/XoaJbS4i+h+ta0HukpzqfxebfBrTfWvqETetLEo8p/4XkznH9wiLFYgwJQ==
   dependencies:
     core-js "^3.6.4"
+    easy-clipboard "^1.0.1"
+    highlight.js "^9.18.1"
     select "^1.1.2"
     vue "^2.6.11"
     vue-class-component "^7.2.2"
