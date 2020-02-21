@@ -17,18 +17,16 @@ npm i easy-clipboard -s
 Then，you can use it like this:
 
 ```
-import ClipboardJS from 'easy-clipboard';
-
-const clipboardJS = new ClipboardJS();
+import clipboard from 'easy-clipboard';
 
 // copy some text directly
-clipboardJS.copy('some text');
+clipboard.copy('some text');
 
 // copy the whole dom by some selector
-clipboardJS.copy('#selector');
+clipboard.copy('#selector');
 
 // copy whatever dom you return
-clipboardJS.copy(() => document.querySelector('.haha'));
+clipboard.copy(() => document.querySelector('.haha'));
 ```
 
 ## TODO

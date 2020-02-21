@@ -1,5 +1,5 @@
 <template>
-  <div style="width: 500px; margin: 0 auto;">
+  <div class="example-code">
     <div class="example">
       <slot />
     </div>
@@ -9,6 +9,7 @@
 </template>
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator'
+import clipboard from 'easy-clipboard'
 
 @Component
 export default class HelloWorld extends Vue {
@@ -16,12 +17,16 @@ export default class HelloWorld extends Vue {
   @Prop() readonly code: string
 
   public handleClippy(): void {
-    this.$clipboardJS.copy(this.code);
+    clipboard.copy(this.code)
   }
 }
 </script>
 
 <style lang="scss" scoped>
+.example-code {
+  width: 100%;
+  margin: 0 auto;
+}
 .example {
   position: relative;
   margin: 15px 0 0;
