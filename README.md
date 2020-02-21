@@ -34,5 +34,5 @@ clipboard.copy(() => document.querySelector('.haha'));
 - [x] 精简clipboard.js
 - [x] 用 ts 重写
 - [x] 用 rollup 打包
-- [ ] 添加 demo
+- [x] 添加 demo
 - [ ] 用 jest 测试
