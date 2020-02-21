@@ -11,8 +11,7 @@ class Clipboard {
   target: any
   selectedText: string
 
-  constructor(options: options) {
-    this.fakeId = options && options.fakeId;
+  constructor() {
     this.version = '__VERSION__';
     this.fakeElem = null;
     this.target = null;
@@ -84,6 +83,11 @@ class Clipboard {
     window.getSelection()!.removeAllRanges();
   }
 
+  // 修改options
+  options(options: options) {
+    this.fakeId = options.fakeId;
+  }
+
   // 对外暴露的方法
   cut(arg: any) {
     this.selectTarget(arg);
@@ -102,4 +106,4 @@ class Clipboard {
   }
 }
 
-export default Clipboard;
+export default new Clipboard();

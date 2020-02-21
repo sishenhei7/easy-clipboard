@@ -51,8 +51,7 @@ function select(element) {
 var select_1 = select;
 
 class Clipboard {
-    constructor(options) {
-        this.fakeId = options && options.fakeId;
+    constructor() {
         this.version = '1.0.5';
         this.fakeElem = null;
         this.target = null;
@@ -117,6 +116,10 @@ class Clipboard {
     clearSelection() {
         window.getSelection().removeAllRanges();
     }
+    // 修改options
+    options(options) {
+        this.fakeId = options.fakeId;
+    }
     // 对外暴露的方法
     cut(arg) {
         this.selectTarget(arg);
@@ -132,5 +135,6 @@ class Clipboard {
         this.removeFake();
     }
 }
+var index = new Clipboard();
 
-module.exports = Clipboard;
+module.exports = index;
