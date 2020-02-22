@@ -64,6 +64,7 @@ class Clipboard {
   copyText(action: string) {
     return new Promise((resolve, reject) => {
       const { selectedText } = this
+
       try {
         document.execCommand(action)
         resolve({
@@ -76,6 +77,7 @@ class Clipboard {
           selectedText
         })
       }
+
       this.clearSelection()
     })
   }
