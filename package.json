@@ -8,7 +8,8 @@
     "build": "rollup -w -c ./rollup.config.js",
     "serve": "vue-cli-service serve",
     "build_demo": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
+    "lint": "vue-cli-service lint lib",
+    "lint_demo": "vue-cli-service lint",
     "report": "vue-cli-service build --report",
     "test:unit": "vue-cli-service test:unit"
   },

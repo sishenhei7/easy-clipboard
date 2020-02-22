@@ -67,6 +67,7 @@ import { Component, Vue } from 'vue-property-decorator'
 import clipboard from 'easy-clipboard'
 import ExampleCode from '@/components/ExampleCode.vue'
 import { copyDirectlyCode, copyNodeCode, copyCallbackCode, copyTableCode } from '@/utils/snippet'
+// import clipboard from '../../lib'
 
 /* eslint-disable @typescript-eslint/no-inferrable-types */
 @Component({
