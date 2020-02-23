@@ -1,5 +1,5 @@
 # easy-clipboard
-[![Codecov](https://img.shields.io/codecov/c/github/sishenhei7/easy-clipboard/master.svg)](https://codecov.io/github/sishenhei7/easy-clipboard?branch=master)[![NPM version](https://img.shields.io/npm/v/easy-clipboard.svg?style=flat)](https://npmjs.com/package/easy-clipboard) [![NPM downloads](https://img.shields.io/npm/dm/easy-clipboard.svg?style=flat)](https://npmjs.com/package/easy-clipboard)
+[![Codecov](https://img.shields.io/codecov/c/github/sishenhei7/easy-clipboard/master.svg?style=flat)](https://codecov.io/github/sishenhei7/easy-clipboard?branch=master) [![NPM version](https://img.shields.io/npm/v/easy-clipboard.svg?style=flat)](https://npmjs.com/package/easy-clipboard) [![NPM downloads](https://img.shields.io/npm/dm/easy-clipboard.svg?style=flat)](https://npmjs.com/package/easy-clipboard) [![NPM license](https://img.shields.io/npm/l/easy-clipboard.svg?style=flat)](https://npmjs.com/package/easy-clipboard)
 
 > clipboard.js 的简化版，去掉了点击事件，提升了易用性
 
