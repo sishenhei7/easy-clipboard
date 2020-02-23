@@ -39,4 +39,4 @@ clipboard.copy(() => document.querySelector('.haha'));
 - [x] 用 ts 重写
 - [x] 用 rollup 打包
 - [x] 添加 demo
-- [ ] 用 jest 测试
+- [x] 用 jest 测试
