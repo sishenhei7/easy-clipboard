@@ -26,11 +26,11 @@ import clipboard from 'easy-clipboard';
 clipboard.copy('some text');
 
 // copy the whole dom by some node
-const node = document.querySelector(selector)
+const node = document.querySelector('#selector')
 clipboard.copy(node);
 
 // copy whatever dom you return
-clipboard.copy(() => document.querySelector('.haha'));
+clipboard.copy(() => document.querySelector('#selector'));
 ```
 
 ## TODO
