@@ -7,8 +7,8 @@ interface Options {
 class Clipboard {
   fakeId: string
   version: string
-  fakeElem: any
-  target: any
+  fakeElem: Node | null
+  target: Node | null
   selectedText: string
 
   constructor() {
@@ -42,7 +42,7 @@ class Clipboard {
 
   removeFake() {
     if (this.fakeElem) {
-      this.fakeElem.parentNode.removeChild(this.fakeElem)
+      this.fakeElem.parentNode!.removeChild(this.fakeElem)
       this.fakeElem = null
     }
   }
