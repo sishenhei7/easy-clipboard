@@ -7,7 +7,7 @@ interface Options {
 class Clipboard {
   fakeId: string
   version: string
-  fakeElem: Node | null
+  fakeElem: HTMLTextAreaElement | null
   target: Node | null
   selectedText: string
 
