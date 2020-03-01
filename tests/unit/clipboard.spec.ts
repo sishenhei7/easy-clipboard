@@ -125,7 +125,7 @@ describe('clipboard', () => {
     clipboard
       .copy(text)
       .then(() => {
-        expect(clipboard.fakeElem.id).toEqual(fakeId)
+        expect(clipboard.fakeElem!.id).toEqual(fakeId)
       })
   })
 

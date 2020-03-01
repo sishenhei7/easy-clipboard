@@ -1,3 +1,5 @@
 declare module 'vue-highlightjs'
 declare module 'highlight.js'
+declare module 'highlight.js/lib/highlight.js'
+declare module 'highlight.js/lib/languages/javascript'
 declare module 'easy-clipboard'

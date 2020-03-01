@@ -30,7 +30,7 @@
       </div>
     </example-code>
     <h3>Copy a whole table(to a excel)</h3>
-    <example-code :code="code4" type="html">
+    <example-code :code="code4" type="javascript">
       <div class="flex justify-between">
         <table id="js-copy-table" class="table">
           <thead>
